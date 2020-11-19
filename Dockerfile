@@ -13,4 +13,4 @@ RUN gradle clean build --no-daemon > /dev/null 2>&1 || true
 COPY ./ /app/
 
 # Do the actual build
-RUN gradle clean build --no-daemon
+#RUN gradle clean build --no-daemon
