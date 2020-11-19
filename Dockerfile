@@ -7,7 +7,8 @@ COPY build.gradle settings.gradle
 
 # Only download dependencies
 # Eat the expected build failure since no source code has been copied yet
-RUN gradle clean build --no-daemon > /dev/null 2>&1 || true
+#RUN gradle clean build --no-daemon > /dev/null 2>&1 || true
+RUN time gradle clean build --no-daemon
 
 # Copy all files
 COPY ./ /app/
