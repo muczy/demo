@@ -1,4 +1,4 @@
-FROM openjdk:8
+FROM gradle:6.6.1-jdk8-openj9
 
 WORKDIR /app
 
