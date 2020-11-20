@@ -6,7 +6,7 @@ WORKDIR /app
 COPY build.gradle settings.gradle gradle gradlew /app/
 
 # Only download dependencies
-RUN ls -lR && ./gradlew --no-daemon clean compileJava
+RUN ./gradlew --no-daemon --refresh-dependencies && du -hs ~/.gradle
 
 # Copy all files
 COPY ./ /app/
