@@ -131,7 +131,7 @@ publishing.publications.withType(MavenPublication) {
 								delegate.useDefaultDelimiters('false')
 							}
 						}
-						plugin {
+						/*plugin {
 							delegate.groupId('pl.project13.maven')
 							delegate.artifactId('git-commit-id-plugin')
 							executions {
@@ -147,7 +147,7 @@ publishing.publications.withType(MavenPublication) {
 								delegate.generateGitPropertiesFile('true')
 								delegate.generateGitPropertiesFilename('${project.build.outputDirectory}/git.properties')
 							}
-						}
+						}*/
 						plugin {
 							delegate.groupId('org.springframework.boot')
 							delegate.artifactId('spring-boot-maven-plugin')
