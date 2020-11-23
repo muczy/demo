@@ -6,7 +6,7 @@ pluginManagement {
 			url 'https://repo.spring.io/plugins-release'
 		}
 		//if (version.endsWith('-SNAPSHOT')) {
-		//	maven { url "https://repo.spring.io/snapshot" }
+			maven { url "https://repo.spring.io/snapshot" }
 		//}
 	}
 	resolutionStrategy {
